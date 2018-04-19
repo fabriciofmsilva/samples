@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Toggling Classes</title>
+  <title>Hiding And Showing</title>
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
   <div id="app">
-    <button @click="active = !active" :aria-pressed="active ? 'true' : 'false'">Toggle me</button>
-    <p :class="{ red: active }">Sometimes I need to be styled differently</p>
+    <button type="button" id="toggle" aria-expanded="false">
+      Toggle Panel
+    </button>
+    <p class="hello">hello</p>
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.3/vue.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
