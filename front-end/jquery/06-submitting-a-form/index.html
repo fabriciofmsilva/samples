@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Submitting A Form</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app">
+    <form action="/">
+      <div>
+        <label for="name">Name:</label><br>
+        <input id="name" type="text" name="name" required/>
+      </div>
+      <div>
+        <label for="email">Email:</label><br>
+        <input id="email" type="email" name="email"  required/>
+      </div>
+      <div>
+        <label for="caps">HOW DO I TURN OFF CAPS LOCK:</label><br>
+        <textarea id="caps" name="caps" required></textarea>
+      </div>
+      <button class="submit" type="submit">Submit</button>
+      <div>
+        <h3>Response from server:</h3>
+        <pre class="response"></pre>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
